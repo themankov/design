@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Design</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <input type="checkbox" id="check" class="checkbox" hidden />
+      <label for="check">
+        <div class="button">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </label>
+      <div class="navigation-logo">
+        <h1>Logo</h1>
+      </div>
+      <ul class="navigation-list" data-visible="false">
+        <li class="navigation-item">
+          <a href="#home" class="navigation-link">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#portfolio" class="navigation-link">Portfolio</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#about" class="navigation-link">About Us</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#contact" class="navigation-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="content" id="home">
+      <header class="header">
+        <div class="header-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          natus quod possimus sit recusandae commodi repellendus nam error quo
+          quisquam.
+        </div>
+        <img src="./image/header1.png" class="header-img1" />
+        <img src="./image/header2.png" class="header-img2" />
+        <div class="main-text">Creative Design</div>
+        <div class="header-btn">
+          <button>Get a Quote</button>
+        </div>
+      </header>
+
+      <section class="portfolio">
+        <div class="porfolio-heading">
+          <a class="anchor" id="portfolio"></a>Portfolio
+        </div>
+        <img src="./image/portfolio1.png" class="img img-1" />
+        <img src="./image/portfolio2.png" class="img img-2" />
+        <img src="./image/portfolio3.png" class="img img-3" />
+        <img src="./image/portfolio4.png" class="img img-4" />
+        <img src="./image/portfolio5.png" class="img img-5" />
+        <img src="./image/portfolio6.png" class="img img-6" />
+      </section>
+
+      <section class="about">
+        <div class="about-heading">
+          <a class="anchor" id="about"></a>About Us
+        </div>
+        <div class="about-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          repellat libero ratione voluptate quas reiciendis nisi commodi
+          reprehenderit ea ex? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+          <span
+            >Eligendi quam dolore consequuntur rerum vitae! Consectetur,
+            reiciendis repudiandae culpa autem explicabo minus quasi repellendus
+            recusandae unde aperiam debitis velit quisquam eveniet.</span
+          >
+        </div>
+        <div class="about-right">
+          <img src="./image/about-us.png" />
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <a class="anchor" id="testimonials"></a>
+        <div class="testimonial-heading">Testimonials</div>
+        <div class="testimonials-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          doloremque suscipit quibusdam explicabo excepturi! Deleniti inventore
+          culpa harum nostrum praesentium?
+        </div>
+        <div class="testimonials-card-wrapper">
+          <div class="testimonials-card card-1">
+            <div class="card-img"><img src="./image/testimonials1.png" /></div>
+
+            <div class="card-content card-content-1">
+              <h1>"Amazing Team with Lorem Ipsum"</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                totam maiores doloribus velit minima doloremque?
+              </p>
+              <button class="card-btn">
+                See full review
+                <div class="icon">
+                  <div class="arrow"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="testimonials-card card-2">
+            <div class="card-img"><img src="./image/testimonials2.png" /></div>
+            <div class="card-content card-content-2">
+              <h1>"Amazing Team with Lorem Ipsum"</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                totam maiores doloribus velit minima doloremque?
+              </p>
+              <button class="card-btn">
+                See full review
+                <div class="icon">
+                  <div class="arrow"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="testimonials-card card-3">
+            <div class="card-img"><img src="./image/testimonials3.png" /></div>
+            <div class="card-content card-content-3">
+              <h1>"Amazing Team with Lorem Ipsum"</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                totam maiores doloribus velit minima doloremque?
+              </p>
+              <button class="card-btn">
+                See full review
+                <div class="icon">
+                  <div class="arrow"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="testimonials-btn">See All Reviews</button>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts-heading">
+          <a class="anchor" id="contact"></a>Contact
+        </div>
+        <form action="#" class="contact-form">
+          <div class="contact-form-el">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Jhon Doe" />
+          </div>
+          <div class="contact-form-el">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jhon@email.com" />
+          </div>
+          <div class="contact-form-el">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Enter your message here..."
+            ></textarea>
+          </div>
+          <button type="submit" class="testimonials-btn">Send</button>
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="footer-heading"><h1>2022 Company</h1></div>
+        <div class="copyright">&copy; All rights reserved @themankov</div>
+      </footer>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

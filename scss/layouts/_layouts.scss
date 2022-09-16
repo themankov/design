@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'intel', sans-serif;
+  font-size: 10px;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -10vh;
+  visibility: hidden;
+}
+.content {
+  display: grid;
+  width: 100%;
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+  grid-template-rows: min-content 90vh 200vh repeat(3, min-content);
+}
+.header {
+  margin-top: 10vh;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  display: grid;
+  background-color: black;
+  grid-template-rows: repeat(10, minmax(min-content, 1fr));
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 1fr))
+    minmax(6rem, 1fr);
+  position: relative;
+  overflow-x: hidden;
+  @media (max-width: 440px) {
+    grid-template-rows: repeat(8, minmax(min-content, 1fr));
+  }
+  &:before {
+    content: '';
+    width: 250%;
+    z-index: 20;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000, #000);
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: bannerAnim 3s linear forwards;
+  }
+  @keyframes bannerAnim {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -250%;
+    }
+  }
+}
+.portfolio {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  display: grid;
+  gap: 2rem;
+  background-color: black;
+  grid-template-rows: repeat(20, minmax(min-content, 1fr));
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+}
+.about {
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  display: grid;
+  padding-top: 3rem;
+  gap: 2rem;
+  background-color: black;
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+}
+.testimonials {
+  grid-row: 5/6;
+  grid-column: 1/-1;
+  display: grid;
+  padding-top: 3rem;
+  gap: 1rem;
+  background-color: black;
+  grid-template-rows: repeat(a2to-fit, minmax(min-content, 10rem));
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+}
+.contacts {
+  grid-row: 6/7;
+  grid-column: 1/-1;
+  display: grid;
+  padding-top: 3rem;
+  gap: 1rem;
+  background-color: black;
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 10rem));
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+}
+.footer {
+  grid-row: 7/8;
+  grid-column: 1/-1;
+  display: grid;
+  padding-top: 3rem;
+  gap: 1rem;
+  background-color: black;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns:
+    minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(6rem, 1fr);
+}
